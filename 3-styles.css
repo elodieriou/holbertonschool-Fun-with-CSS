@@ -68,9 +68,7 @@
 /* Items */
 
 .menu .menu-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     position: absolute;
     border: 1px solid #84273f;
     border-radius: 100px;
@@ -104,4 +102,9 @@
 
 .menu .menu-open:checked ~ .menu-item:nth-child(7) {
     transform: translateY(230px);
+}
+
+i {
+    position: relative;
+    top: 10px;
 }
