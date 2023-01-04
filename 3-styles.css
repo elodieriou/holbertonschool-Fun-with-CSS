@@ -1,0 +1,107 @@
+/* Button */
+
+.menu {
+    position: absolute;
+}
+
+.menu .menu-open {
+    display: none;
+}
+
+.menu .menu-open:checked ~ .menu-open-button .menu-line {
+    display: block;
+}
+
+.menu .menu-open-button {
+    border: 1px solid #84273f;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #c81938;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+}
+
+.menu .menu-open:not(:checked) ~ .menu-open-button:hover {
+    transform: scale(1.2);
+    transition: .3s;
+}
+
+.menu .menu-open-button .menu-line {
+    background-color: white;
+    width: 17px;
+    height: 2px;
+    position: absolute;
+    left: 11px;
+}
+
+.menu .menu-open:checked ~ .menu-open-button .menu-line {
+    top: 18px;
+}
+
+.menu .menu-open-button .menu-line-1 {
+    top: 13px;
+}
+
+.menu .menu-open:checked ~ .menu-open-button .menu-line-1 {
+    transform: rotate(-45deg);
+}
+
+.menu .menu-open-button .menu-line-2 {
+    top: 18px;
+}
+
+.menu .menu-open:checked ~ .menu-open-button .menu-line-2 {
+    background: transparent;
+    border: transparent;
+}
+
+.menu .menu-open-button .menu-line-3 {
+    top: 23px
+}
+
+.menu .menu-open:checked ~ .menu-open-button .menu-line-3 {
+    transform: rotate(45deg);
+}
+
+/* Items */
+
+.menu .menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border: 1px solid #84273f;
+    border-radius: 100px;
+    background-color: #c81938;
+    width: 40px;
+    height: 40px;
+    color: white;
+    transition: .3s;
+}
+
+.menu .menu-item:hover {
+    background-color: white;
+    color: #c81938;
+}
+
+.menu .menu-open:checked ~ .menu-item:nth-child(3) {
+    transform: translateY(50px);
+}
+
+.menu .menu-open:checked ~ .menu-item:nth-child(4) {
+    transform: translateY(95px);
+}
+
+.menu .menu-open:checked ~ .menu-item:nth-child(5) {
+    transform: translateY(140px);
+}
+
+.menu .menu-open:checked ~ .menu-item:nth-child(6) {
+    transform: translateY(185px);
+}
+
+.menu .menu-open:checked ~ .menu-item:nth-child(7) {
+    transform: translateY(230px);
+}

@@ -15,6 +15,7 @@
     border-radius: 30px;
     border: 2px solid #c4c4c5;
     background-color: #ebebeb;
+    cursor: pointer;
 }
 
 .toggle .toggle-label .toggle-inner::before {
